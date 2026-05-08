@@ -1,12 +1,8 @@
 import React from 'react';
+import type {AppProps} from 'next/app';
 import 'lib/global-styles.css'; // This will ensure that the global-styles are positioned properly in the head.
 
-interface Props {
-  Component: any;
-  pageProps?: any;
-}
-
-const NextApp = ({Component, pageProps}: Props) => {
+const NextApp = ({Component, pageProps}: AppProps) => {
   return <Component {...pageProps} />;
 };
 

@@ -25,7 +25,8 @@
       "zones/*": [
         "zones/*"
       ]
-    }
+    },
+    "incremental": true
   },
   "exclude": [
     "node_modules"
